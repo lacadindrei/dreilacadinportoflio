@@ -1,0 +1,195 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+	list-style: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.has-image-centered {
+  margin-left: auto;
+  margin-right: auto;
+  height: 250px!important;
+  width: 250px!important;
+  border: 5px ridge gray;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-top: 60px;
+}
+
+.has-image-centered:hover {
+	box-shadow: 0 0 30px #00d1b2 !important;
+	transition: 0.7s;
+}
+
+.landing-name, h1 {
+	font-family: 'Playfair Display SC', serif !important;
+	/*font-style: italic !important;*/
+	font-weight: bold !important;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.19);
+}
+
+h2, p, h3, button, a {
+	font-family: 'Montserrat', sans-serif !important;
+	text-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.button:hover {
+	transition: 0.7s;
+	text-decoration: none;
+}
+
+.social-icons a {
+   text-decoration:none;
+   color: inherit !important;
+}
+
+.navbar.transparent.navbar-inverse .navbar-inner {
+    border-width: 0px;
+    -webkit-box-shadow: 0px 0px;
+    box-shadow: 0px 0px;
+    background-color: rgba(0,0,0,0.0);
+    background-image: -webkit-gradient(linear, 50.00% 0.00%, 50.00% 100.00%, color-stop( 0% , rgba(0,0,0,0.00)),color-stop( 100% , rgba(0,0,0,0.00)));
+    background-image: -webkit-linear-gradient(270deg,rgba(0,0,0,0.00) 0%,rgba(0,0,0,0.00) 100%);
+    background-image: linear-gradient(180deg,rgba(0,0,0,0.00) 0%,rgba(0,0,0,0.00) 100%);
+}
+
+.has-equal-height {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.card {
+  display:flex;
+  flex-direction: column;
+  height: 100%;
+}
+/*
+#herobanner {
+  margin-top: -73px;
+  background: url("../img/herobanner.jpeg")!important;
+  height: 120vh;
+  position:relative;
+  top:-100px;
+}*/
+
+#dev-name {
+  text-shadow: 3px 3px 5px rgba(0,0,0,0.5);
+}
+/*
+.cool-link li {
+  display: inline-block!important;
+}
+
+.cool-link a {
+  text-decoration: none!important;
+  color: #fff!important;
+  padding: 0 5px!important;
+  margin: 0 30px;
+  width: 100%;
+}
+
+.cool-link a:hover {
+  border-bottom: 1px solid white;
+  background: rgba(0,0,0,0.2);
+  transition: width 0.9s!important;
+}
+*/
+
+#herobanner {
+  width: 100%;
+  height: 100vh;
+  box-sizing: border-box;
+  background: url("../img/herobanner.jpeg");
+  background-size: cover;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  /*z-index: 1;*/
+  background: rgba(3, 51, 31, 0.2);
+  box-sizing: border-box;
+}
+
+.brand-logo {
+ font-family: 'Cinzel', serif!important;
+ font-size: 1.6rem;
+ color: #DFE0DC!important;
+ padding-bottom: .5em;
+ /*padding-top: .6rem;*/
+}
+
+#brandDiv {
+  padding-top: 1rem;
+}
+
+nav .brand h2 {
+  margin: 0;
+  padding: 0;
+  color: #fff;
+}
+
+.navbar-nav {
+  float: right;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-item {
+  list-style: none;
+}
+
+.nav-link {
+  position: relative;
+  display: block;
+  height: 70px;
+  line-height: 70px;
+  padding: 0 20px;
+  box-sizing: border-box;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: .5s;
+}
+
+.nav-link:hover {
+  color: #262626!important;
+}
+
+.nav-link:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  transform-origin: right;
+  z-index: -1;
+  transform: scaleX(0);
+  transition: transform .5s;
+}
+
+.nav-link:hover:before {
+  transform-origin: left;
+  transform: scale(1);
+}
+
+.back-to-top {
+    cursor: pointer;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display:none;
+}
